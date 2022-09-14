@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    
+    body {
+     margin: 0;
+      background-image: linear-gradient(rgb(247, 142, 37), white, green);
+    }
+/* header CSS */
+   
+    .container-fluid {
+      background-image: radial-gradient(rgb(247, 142, 37), white, green);
+      margin-top: 0px;
+      padding: 5px;
+      animation-name: navbar;
+      animation-duration: 5s;
+      animation-iteration-count: infinite;
+      text-align: center;
+    }
+    
+
+    @keyframes navbar {
+      0% {
+        background-image: radial-gradient(rgb(247, 142, 37), white, green);
+      }
+
+      50% {
+        background-image: radial-gradient(green, white, rgb(247, 142, 37));
+      }
+    }
+/* ROW1 CSS */
+    .column1a {
+      grid-area: A;
+      margin:5px; 
+     
+    }
+
+    .column1b {
+      grid-area: B;
+      margin:5px; 
+    
+    }
+
+    .column1c {
+      grid-area: C;
+      margin:5px; 
+      
+    }
+
+    .row1 {
+      display: grid;
+      grid-template-areas: 'A A A A B B B B C C C C';
+      padding: 20pxs;
+    }
+/* ROW2 CSS */
+    .column2a {
+      grid-area: D;
+      margin:5px; 
+     
+    }
+
+    .column2b {
+      grid-area: E;
+      margin:5px; 
+     
+    }
+
+    .column2c {
+      grid-area: F;
+      margin:5px; 
+     
+    }
+
+    .row2 {
+      display: grid;
+      grid-template-areas: 'D D D D E E E E F F F F'
+    }
+/* ROW3 CSS */
+    .column3a {
+      grid-area: G;
+      margin:5px; 
+      
+    }
+
+    .column3b {
+      grid-area: H;
+      margin:5px; 
+      
+    }
+
+    .column3c {
+      grid-area: I;
+      margin:5px; 
+    
+    }
+
+    .row3 {
+      display: grid;
+      grid-template-areas: 'G G G G H H H H I I I I'
+    }
+    
+/* FOOTER CSS */
+    .foot {
+      margin-bottom: 0px;
+      text-align: center;
+      
+      border: 2px solid rgb(54, 149, 19);
+      background-color: rgb(236, 140, 13);
+      font-size: 20px;
+      
+    }
+   .thnx{
+    color: white;
+    text-shadow: 5px 5px rgba(0,0,0,0.2);
+  }
+  .credit{
+    color: green;
+    text-shadow: 5px 5px rgba(0,0,0,0.2);
+   }
+   /* Audio janganman */
+   .janganman{
+    text-align: center;
+ 
+  }
+  
+   /* TEXT BELOW the IMAGES CSS */
+    .imgtxt {
+         color: rgb(81, 163, 226);
+         font-size: 20px;
+         font-family: Georgia, 'Times New Roman', Times, serif;
+     }
+
+    /* For mobile phones */
+    @media (max-width:600px){
+      .row1 {
+        display: block;
+      }
+      .row2 {
+        display: block;
+      }
+      .row3 {
+        display: block;
+      }
+    }
+    /* image css */
+    img{
+      box-shadow: 0px 6px 6px 0px rgba(0,0,0,0.5);
+      border-radius: 50px;
+      animation-name: image;
+      animation-duration: 3s;
+      animation-iteration-count: infinite;
+    }
+    @keyframes image {
+      0%{border-radius:50px ;}
+      50%{border-radius:100px ;}
+    }
+    
+
+    
+  </style>
+</head>
+
+<body>
+  <!-- HEADER -->
+    <div class="container-fluid " >
+      <a class="navbar-brand " href="#" >
+        <h2 >Historical Places in <b style="color: rgb(236, 115, 16);">IN</b><b
+          style="color: rgb(254, 254, 254);">D</b><b style="color: rgb(92, 240, 13);">IA</b></h2>
+        </a>
+      </div>
+  
+  <!-- BODY -->
+  <!-- FIRST ROW -->
+  <div class="row1">
+    <!-- Row 1a -->
+    <div class="column1a" style="text-align: center;">
+      <a href="https://en.wikipedia.org/wiki/Taj_Mahal" target="_blank"><img
+          src="https://media.istockphoto.com/photos/taj-mahal-monument-at-sunrise-agra-india-picture-id485899645"
+          height="200px" width="300px"> <br>
+          <h5 class="imgtxt">Taj Mahal</h5>
+      </a>
+    </div>
+    <!-- Row 1b -->
+    <div class="column1b" style="text-align: center;">
+      <a href="https://en.wikipedia.org/wiki/Qutb_Minar" target="_blank"><img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWfrbNR18wBPc0MbhQZA1RyTotd9eQdOhxMw&usqp=CAU"
+          height="200px" width="300px"><br>
+        <h5 class="imgtxt">Qutub Minar</h5>
+      </a>
+    </div>
+    <!-- Row 1c -->
+    <div class="column1c" style="text-align: center;"><a href="">
+        <a href="https://en.wikipedia.org/wiki/Golden_Temple" target="_blank"><img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/The_Golden_Temple_of_Amrithsar_7.jpg/330px-The_Golden_Temple_of_Amrithsar_7.jpg"
+            height="200px" width="300px"> <br>
+          <h5 class="imgtxt">Golden Temple</h5>
+        </a>
+      </a> </div>
+  </div>
+  <!-- SECOND ROW -->
+  <div class="row2">
+    <!-- Row 2a -->
+    <div class="column2a" style="text-align: center;">
+      <a href="https://en.wikipedia.org/wiki/Konark_Sun_Temple" target="_blank"><img
+          src="https://thumbs.dreamstime.com/b/sun-temple-konark-india-27237609.jpg" height="200px"
+          width="300px"> <br>
+        <h5 class="imgtxt">Konark Sun Temple</h5>
+      </a>
+    </div>
+    <!-- Row 2b -->
+    <div class="column2b" style="text-align: center;">
+      <a href="https://en.wikipedia.org/wiki/Jantar_Mantar,_Jaipur" target="_blank"><img
+          src="https://thumbs.dreamstime.com/b/main-structure-jantar-mantar-new-delhi-15481579.jpg" 
+          height="200px" width="300px"><br>
+        <h5 class="imgtxt"> Jantar Mantar</h5>
+      </a>
+    </div>
+    <!-- Row 2c -->
+    <div class="column2c" style="text-align: center;">
+      <a href="https://en.wikipedia.org/wiki/Hawa_Mahal" target="_blank"><img
+          src="https://thumbs.dreamstime.com/b/wind-palace-located-jaipur-city-rajasthan-india-best-know-iconic-structure-looks-people-come-to-see-around-188245054.jpg"
+         height="200px" width="300px"><br>
+        <h5 class="imgtxt">Hawa Mahal</h5>
+      </a>
+    </div>
+  </div>
+  <!-- THIRD ROW -->
+  <div class="row3">
+    <!-- Row 3a -->
+    <div class="column3a" style="text-align: center;">
+      <a href="https://en.wikipedia.org/wiki/Gateway_of_India" target="_blank"><img
+          src="https://thumbs.dreamstime.com/b/beautiful-exposure-gateway-india-one-india-s-most-unique-landmarks-situated-city-mumbai-gateway-india-116776982.jpg"
+           height="200px" width="300px"> <br>
+        <h5 class="imgtxt">Gateway of India</h5>
+      </a>
+    </div>
+    <!-- Row 3b -->
+    <div class="column3b" style="text-align: center;">
+      <a href="https://en.wikipedia.org/wiki/Ajanta_Caves" target="_blank"><img
+          src="https://thumbs.dreamstime.com/b/ajanta-caves-india-near-aurangabad-maharashtra-state-50522272.jpg"
+          height="200px" width="300px"><br>
+        <h5 class="imgtxt">Ajanta Caves</h5>
+      </a>
+    </div>
+    <!-- Row 3c -->
+    <div class="column3c" style="text-align: center;">
+      <a href="https://en.wikipedia.org/wiki/Meenakshi_Temple,_Madurai" target="_blank"><img
+          src="https://thumbs.dreamstime.com/b/madurai-gopuram-meenakshi-amman-temple-sundareswarar-india-colored-statues-decorating-tall-geatway-towers-52255770.jpg"
+          height="200px" width="300px"><br>
+        <h5 class="imgtxt">Meenakshi Amman Temple</h5>
+      </a>
+    </div>
+  </div>
+  <!-- AUDIO -->
+  <div class="janganman">
+    <h2 style="color: lightgreen;">PLAY OUR NATIONAL ANTHEM</h2>
+    <audio src="https://ia800304.us.archive.org/15/items/jana-gana-mana/jana_gana_mana.mp3" controls class="janganaudio"></audio>
+  </div>
+  <!-- FOOTER -->
+  <div class="foot">
+    <h3 class="thnx">Thankyou</h3>
+    <h4 class="credit">Designed and developed by Harshit Tripathi</h4>
+  </div>
+
+</body>
+</html>
